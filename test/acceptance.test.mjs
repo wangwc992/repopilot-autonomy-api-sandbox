@@ -21,4 +21,3 @@ try {
 for (const entry of entries.filter(entry => entry.isFile() && entry.name.endsWith('.test.mjs')).sort((a, b) => a.name.localeCompare(b.name))) {
   await import(new URL(entry.name, scenarios).href);
 }
-
