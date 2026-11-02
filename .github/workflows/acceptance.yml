@@ -11,3 +11,5 @@ jobs:
         with:
           node-version: '24'
       - run: npm test
+      - name: T13 immutable header-name boundary contract
+        run: node --test --test-reporter=tap .ci/t13-header-contract.test.mjs
